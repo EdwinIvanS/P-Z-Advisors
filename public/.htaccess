@@ -1,0 +1,26 @@
+# ==========================================================================
+# Configuración Apache para servir una SPA (React Router) correctamente.
+# Copiar este archivo dentro de la carpeta publicada en el servidor
+# (normalmente junto a index.html, dentro de /dist tras el build).
+# ==========================================================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # No reescribir si el archivo o directorio solicitado existe realmente
+  # (assets, imágenes, css, js, etc.)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Cualquier otra ruta se resuelve contra index.html para que
+  # React Router decida qué componente renderizar en el cliente.
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Cache de assets estáticos con hash en el nombre (generados por Vite)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
