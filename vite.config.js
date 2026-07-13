@@ -1,5 +1,5 @@
-import { defineConfig, loadEnv } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig, loadEnv } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 //
@@ -15,8 +15,9 @@ import react from '@vitejs/plugin-react';
 // como `basename`, por lo que ambos quedan siempre sincronizados
 // automáticamente sin tener que tocar el código de las rutas.
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
-  const basePath = env.VITE_BASE_PATH || '/';
+  const env = loadEnv(mode, process.cwd(), "");
+  //const basePath = env.VITE_BASE_PATH || '/';
+  const basePath = env.VITE_BASE_PATH || '/P-Z-Advisors/';
 
   return {
     base: basePath,
@@ -29,7 +30,7 @@ export default defineConfig(({ mode }) => {
       port: 4173,
     },
     build: {
-      outDir: 'dist',
+      outDir: "dist",
       sourcemap: false,
     },
   };
