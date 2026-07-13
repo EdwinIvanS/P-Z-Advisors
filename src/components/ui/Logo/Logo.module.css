@@ -1,0 +1,30 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.img {
+  display: block;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Variante "header": P&Z + ADVISORS, pensada para navbars sobre fondo claro.
+   Al tener su propio fondo navy, funciona como una pequeña insignia
+   con esquinas redondeadas y sombra sutil. */
+.badge .img {
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Tamaños: controlan la altura; el ancho se ajusta proporcionalmente */
+.sm .img {
+  height: 34px;
+}
+.md .img {
+  height: 44px;
+}
+.lg .img {
+  height: 96px;
+}

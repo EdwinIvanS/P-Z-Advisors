@@ -1,0 +1,26 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.75);
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--color-accent-light);
+}
+
+.current {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.4);
+}

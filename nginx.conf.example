@@ -1,0 +1,23 @@
+# ==========================================================================
+# Ejemplo de bloque de configuración Nginx para servir esta SPA en
+# producción. Ajustar `server_name` y `root` según el servidor real.
+# ==========================================================================
+server {
+    listen 80;
+    server_name midominio.com;
+
+    root /var/www/amezquita-app/dist;
+    index index.html;
+
+    # Cachear assets estáticos versionados por Vite (contienen hash en el nombre)
+    location /assets/ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # Fallback SPA: cualquier ruta que no sea un archivo real
+    # se resuelve contra index.html para que React Router la maneje.
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}

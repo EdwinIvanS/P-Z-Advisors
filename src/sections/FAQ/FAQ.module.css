@@ -1,0 +1,8 @@
+.section {
+  padding-block: 72px;
+}
+
+.wrapper {
+  max-width: 820px;
+  margin-inline: auto;
+}

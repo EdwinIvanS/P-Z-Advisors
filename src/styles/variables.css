@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Variables globales del proyecto - P&Z Advisors
+   Paleta corporativa: azul marino + dorado, tipografía limpia y profesional
+   ========================================================================== */
+:root {
+  /* Colores principales (tomados del isotipo oficial P&Z Advisors) */
+  --color-primary: #10233d;
+  --color-primary-dark: #0b1521;
+  --color-primary-light: #1b3a5c;
+  --color-accent: #bf925a;
+  --color-accent-dark: #a1723f;
+  --color-accent-light: #d9b483;
+
+  /* Neutros */
+  --color-white: #ffffff;
+  --color-bg-light: #f5f7fa;
+  --color-bg-soft: #eef1f6;
+  --color-border: #e1e5ec;
+  --color-text: #1f2937;
+  --color-text-muted: #5b6472;
+  --color-text-light: #8993a4;
+
+  /* Estados */
+  --color-success: #2e8b57;
+  --color-whatsapp: #25d366;
+
+  /* Tipografía */
+  --font-heading: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* Tamaños */
+  --container-max: 1200px;
+  --header-height: 84px;
+  --header-height-mobile: 64px;
+
+  /* Radios y sombras */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 2px 8px rgba(11, 37, 69, 0.08);
+  --shadow-md: 0 8px 24px rgba(11, 37, 69, 0.12);
+  --shadow-lg: 0 16px 40px rgba(11, 37, 69, 0.18);
+
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+
+  /* z-index */
+  --z-header: 1000;
+  --z-dropdown: 1010;
+  --z-overlay: 1020;
+  --z-whatsapp: 1030;
+}

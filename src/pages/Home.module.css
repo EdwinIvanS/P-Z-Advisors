@@ -1,0 +1,20 @@
+.contentLayout {
+  padding-block: 56px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brochureWrapper {
+  padding-block: 24px 8px;
+}

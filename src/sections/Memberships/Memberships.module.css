@@ -1,0 +1,52 @@
+.section {
+  padding-block: 64px;
+}
+
+.group {
+  margin-bottom: 40px;
+}
+
+.group:last-child {
+  margin-bottom: 0;
+}
+
+.groupTitle {
+  text-align: center;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-light);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.logosRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.logoBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 64px;
+  padding: 0 24px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  min-width: 160px;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.logoBadge:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
