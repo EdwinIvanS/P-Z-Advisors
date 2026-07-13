@@ -6,8 +6,8 @@
 
 export const relatedServices = [
   { label: 'Consultoría empresarial en Bogotá', href: '/consultoria/consultoria-empresarial-en-bogota' },
-  { label: 'Consultoría empresarial en Cali', href: '/consultoria/cali' },
-  { label: 'Consultoría empresarial en Medellín', href: '/consultoria/medellin' },
+  //{ label: 'Consultoría empresarial en Cali', href: '/consultoria/cali' },
+  //{ label: 'Consultoría empresarial en Medellín', href: '/consultoria/medellin' },
   { label: 'Consultoría en NIIF', href: '/consultoria/consultoria-en-niif' },
   { label: 'Evaluación sistema de control interno para empresas', href: '/consultoria/evaluacion-de-control-interno', active: true },
   { label: 'Elaboración y Reporte de Estados Financieros (EEFF)', href: '/consultoria/elaboracion-y-reporte-de-estados-financieros-eeff' },
@@ -88,25 +88,15 @@ export const registrations = [
 
 export const specialists = [
   {
-    name: 'Carlos Martín',
+    name: 'Pepito Perez',
     role: 'Acting Partner',
     linkedin: 'https://www.linkedin.com/in/carlos-eduardo-m-58a02711b/',
   },
   {
-    name: 'Pedro Urrego',
+    name: 'Pepito Perez',
     role: 'Acting Manager',
     linkedin: 'https://www.linkedin.com/in/pedro-david-urrego-guerrero-21a035137/',
-  },
-  {
-    name: 'Paola Gil',
-    role: 'Gerente de Auditoría',
-    linkedin: 'https://www.linkedin.com/in/pao-gil-b00b5059/',
-  },
-  {
-    name: 'Monica Clavijo',
-    role: 'Directora de Calidad',
-    linkedin: 'https://www.linkedin.com/in/monica-alexandra-clavijo-rodriguez-6a9aa8150/',
-  },
+  }
 ];
 
 export const faqItems = [
